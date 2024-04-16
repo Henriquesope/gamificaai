@@ -1,10 +1,11 @@
 @font-face {
-    font-family:"Montserrat";
+    font-family: "Montserrat";
     src: url(fonts/Montserrat-VariableFont_wght.ttf);
 }
-:root{
---roxo-gamifica: #47208b;
---laranja--gamifica: #f06638;
+
+:root {
+    --roxo-gamifica: #47208b;
+    --laranja--gamifica: #f06638;
 
 }
 
@@ -16,6 +17,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .container-grid {
     width: 80%;
     max-width: 1400px;
@@ -27,11 +29,12 @@
     /* centraliza o grid */
 
 }
+
 .banner {
     /* vh ea porcentagem da altura da imagem */
     /* vw e a largura */
     height: 100vh;
-    
+
     background-image: linear-gradient(90deg, rgba(53, 24, 104, 1) 0%, rgba(53, 24, 104, 0.8) 100%), url(img/bg-room.png);
     background-repeat: no-repeat;
     background-position: 165% 40%;
@@ -51,6 +54,7 @@ header .container-grid {
     justify-content: space-between;
     align-items: center;
 }
+
 .menu {
     width: 700px;
     display: flex;
@@ -60,7 +64,7 @@ header .container-grid {
 .menu a {
     font-size: 18px;
     color: white;
-    font-family: "Anta", sans-serif; 
+    font-family: "Anta", sans-serif;
     text-decoration: underline transparent;
     text-decoration-thickness: 2px;
 
@@ -71,9 +75,10 @@ header .container-grid {
 
     text-decoration: underline white;
 
-    /* esse e o hover, mt simples */ 
+    /* esse e o hover, mt simples */
 }
-.conteudo-banner{
+
+.conteudo-banner {
     height: calc(100vh - 280px);
     display: flex;
     align-items: center;
@@ -82,13 +87,14 @@ header .container-grid {
 }
 
 
-.conteudo-banner p{
+.conteudo-banner p {
     font-size: 32px;
     color: white;
     font-family: "Anta", sans-serif;
 
 }
-#sobre{
+
+#sobre {
     padding: 100px 25%;
     text-align: center;
     height: 800px;
@@ -96,6 +102,7 @@ header .container-grid {
     flex-direction: column;
     justify-content: space-between;
 }
+
 h2 {
     font-family: "Anta";
     font-size: 28px;
@@ -109,19 +116,23 @@ h2 {
     line-height: 1.5;
 
 }
+
 #cases {
     text-align: center;
     padding-bottom: 100px;
     margin-bottom: 100px;
-    
+
 }
-#cases h2{
+
+#cases h2 {
     margin-bottom: 70px;
 }
+
 .container-cards {
     display: flex;
     justify-content: space-between;
 }
+
 .card {
     height: 400px;
     width: 250px;
@@ -133,20 +144,25 @@ h2 {
     align-items: center;
     padding-bottom: 20px;
     margin-bottom: 40px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+
 }
-.card img{
+
+.card img {
     height: 55%;
     width: 100%;
     border-radius: 4px 4px 0px 0px;
 }
 
-.card p{
+.card p {
     color: white;
     font-family: "Montserrat";
     font-size: 16px;
     padding: 7%;
+    text-align: left;
 }
-.card button{
+
+.card button {
     width: 90%;
     height: 40px;
 
@@ -160,7 +176,43 @@ h2 {
     transition: background-color 500ms ease;
     color: white;
 }
-.card button:hover{
-    background-color: #ad4949;
 
+.card button:hover {
+    background-color: #ad4949
+}
+
+/* para puxar o id eh por #, e class é . */
+#portifolio {
+    height: 250px;
+    background-image: url(img/Bonecos.png);
+    background-size: 250px;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.filtro {
+    width: 100%;
+    height: 100%;
+
+    background-color: #47208bc2;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+#portifolio .container-grid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#portifolio a {
+    color: white;
+    font-family: "anta";
+    font-size: 28px;
+
+    z-index: 1;
 }
