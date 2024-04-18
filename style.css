@@ -188,6 +188,7 @@ h2 {
     background-size: 250px;
     background-attachment: fixed;
     position: relative;
+    margin-bottom: 120px;
 }
 
 .filtro {
@@ -213,6 +214,143 @@ h2 {
     color: white;
     font-family: "anta";
     font-size: 28px;
-
+    width: fit-content;
     z-index: 1;
+    transition: 200ms;
+}
+#portifolio a:hover{
+    transform: scale(1.05);
+    transition: 200ms;
+}
+
+
+
+
+#contato{
+    text-align: center;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+#contato h2 {
+    margin-bottom: 70px;
+}
+#contato form{
+    background-color: var(--roxo-gamifica);
+    width: 50%;
+    margin: 0 auto;
+    padding: 60px 0;
+    border-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: "montserrat";
+    font-size: 17px;
+
+}
+.campo{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 50px    ;
+}
+.campo-descricao {
+    width: 60%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+}
+.campo input{
+    height: 40px;
+    color:white;
+    background-color: #351868;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    text-indent: 10px;
+    
+}
+.campo input::placeholder, .campo-descricao textarea::placeholder{
+    color: #a0a0a0;
+}
+
+.campo input, .campo-descricao textarea{
+    font-family: "Montserrat";
+    font-size: 17px;
+}
+.campo input:focus{
+    outline: 2px solid var(--laranja--gamifica);
+}
+.campo-descricao textarea:focus{
+    outline: 2px solid var(--laranja--gamifica);
+}
+
+.campo-descricao textarea {
+    color: white;
+    background-color: #351868;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    resize: none;
+    padding: 10px;
+
+}
+.campo label, .campo-descricao label{
+    margin-bottom: 15px;
+}
+#contato form button{
+    height: 40px;
+    width: 60%;
+    background-color: var(--laranja--gamifica);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 500ms;
+}
+#contato form button:hover{
+    background-color: #ad4949;
+}
+footer{
+    background-color: var(--roxo-gamifica);
+    height: 290px;
+}
+footer .container-grid {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    align-items: flex-end;
+}
+.redes-sociais p{
+    color: #fff;
+    font-family: "Anta";
+    font-size: 24px;
+}
+.icones-redes{
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+}
+.icones-redes a{
+    color: white;
+}
+.icones-redes a:hover {
+    color: var(--laranja--gamifica);
+
 }
