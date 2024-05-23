@@ -21,7 +21,7 @@ html{
     scroll-behavior: smooth;
 }
 .container-grid {
-    width: 80%;
+    width: 80vw;
     max-width: 1400px;
     /*margin: 20px - espacamento externo de 20 px*/
     /*margin: 20px 10px - espacamento externo de 20 px na vertical , e 10px na horizontal*/
@@ -37,11 +37,69 @@ html{
     /* vw e a largura */
     height: 100vh;
 
-    background-image: linear-gradient(90deg, rgba(53, 24, 104, 1) 0%, rgba(53, 24, 104, 0.8) 100%), url(img/bg-room.png);
+   
     background-repeat: no-repeat;
     background-position: 165% 40%;
+
+    position: relative;
 }
 
+.primeiro-banner {
+    background-image: linear-gradient(90deg, rgba(53, 24, 104, 1) 0%, rgba(53, 24, 104, 0.8) 100%), url(img/bg-room.png);
+}
+.segundo-banner{
+    background-image: linear-gradient(90deg, rgb(153, 234, 165) 0%, rgba(125, 208, 114, 0.8) 100%), url(img/bg-room.png);
+}
+
+.terceiro-banner {
+    background-image: linear-gradient(90deg, rgb(218, 30, 199) 0%, rgba(236, 253, 0, 0.585) 100%), url(img/bg-room.png);
+}
+#botao-voltar, #botao-proximo {
+    width: 30px;
+
+    background: none;
+    border: none;
+
+    cursor: pointer;
+
+    position: absolute
+}
+
+#botao-voltar svg, #botao-proximo svg {
+    fill: #ffffff76;
+}
+
+#botao-voltar {
+    left: 4%;
+}
+
+#botao-proximo {
+    right: 4%;
+}
+
+.botoes {
+    width: 150px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    bottom: 4%;
+
+    left: calc(50% - 75px);
+}
+.botoes button svg{
+    fill: #ffffff76;
+}
+
+.botoes button {
+    width: 30px;
+    display: unset;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 header {
     height: 165px;
 }
@@ -61,7 +119,7 @@ header .container-grid {
     align-items: center;
 }
 
-.menu {
+.menu {     
     width: 700px;
     display: flex;
     justify-content: space-between;
@@ -133,28 +191,28 @@ header .container-grid {
 }
 
 
-#sobre {
-    padding: 100px 25%;
-    text-align: center;
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+    #sobre {
+        padding: 100px 25%;
+        text-align: center; 
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
-h2 {
-    font-family: "Anta";
-    font-size: 28px;
+    h2 {
+        font-family: "Anta";
+        font-size: 28px;
 
-}
+    }
 
-#sobre p {
-    font-size: 17px;
-    text-align: left;
-    font-family: "Montserrat";
-    line-height: 1.5;
+    #sobre p {
+        font-size: 17px;
+        text-align: left;
+        font-family: "Montserrat";
+        line-height: 1.5;
 
-}
+    }
 
 #cases {
     text-align: center;
@@ -164,8 +222,8 @@ h2 {
 }
 
 #cases h2 {
-    margin-bottom: 70px;
-}
+        margin-bottom: 70px;
+    }
 
 .container-cards {
     display: flex;
@@ -207,17 +265,17 @@ h2 {
 
     background-color: var(--laranja--gamifica);
     border: none;
-    border-radius: 4px;
+    border-radius: 35PX;
     font-family: "Montserrat";
     font-size: 17px;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 500ms ease;
-    color: white;
+    color: #35A7FF;
 }
 
 .card button:hover {
-    background-color: #ad4949
+    background-color: #2E90DB;
 }
 
 /* para puxar o id eh por #, e class é . */
@@ -265,100 +323,100 @@ h2 {
 
 
 
-#contato{
-    text-align: center;
-    padding-bottom: 100px;
-    margin-bottom: 100px;
-}
+    #contato{
+        text-align: center;
+        padding-bottom: 100px;
+        margin-bottom: 100px;
+    }
 
-#contato h2 {
-    margin-bottom: 70px;
-}
-#contato form{
-    background-color: var(--roxo-gamifica);
-    width: 50%;
-    margin: 0 auto;
-    padding: 60px 0;
-    border-radius: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    font-family: "montserrat";
-    font-size: 17px;
+    #contato h2 {
+        margin-bottom: 70px;
+    }
+    #contato form{
+        background-color: var(--roxo-gamifica);
+        width: 50%;
+        margin: 0 auto;
+        padding: 60px 0;
+        border-radius: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        font-family: "montserrat";
+        font-size: 17px;
 
-}
-.campo{
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: left;
-    margin-bottom: 50px    ;
-}
-.campo-descricao {
-    width: 60%;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 30px;
+    }
+    .campo{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+        margin-bottom: 50px    ;
+    }
+    .campo-descricao {
+        width: 60%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 30px;
 
-}
-.campo input{
-    height: 40px;
-    color:white;
-    background-color: #351868;
-    border: none;
-    border-radius: 4px;
-    outline: none;
-    text-indent: 10px;
-    
-}
-.campo input::placeholder, .campo-descricao textarea::placeholder{
-    color: #a0a0a0;
-}
+    }
+    .campo input{
+        height: 40px;
+        color:white;
+        background-color: #351868;
+        border: none;
+        border-radius: 4px;
+        outline: none;
+        text-indent: 10px;
+        
+    }
+    .campo input::placeholder, .campo-descricao textarea::placeholder{
+        color: #a0a0a0;
+    }
 
-.campo input, .campo-descricao textarea{
-    font-family: "Montserrat";
-    font-size: 17px;
-}
-.campo input:focus{
-    outline: 2px solid var(--laranja--gamifica);
-}
-.campo-descricao textarea:focus{
-    outline: 2px solid var(--laranja--gamifica);
-}
+    .campo input, .campo-descricao textarea{
+        font-family: "Montserrat";
+        font-size: 17px;
+    }
+    .campo input:focus{
+        outline: 2px solid var(--laranja--gamifica);
+    }
+    .campo-descricao textarea:focus{
+        outline: 2px solid var(--laranja--gamifica);
+    }
 
-.campo-descricao textarea {
-    color: white;
-    background-color: #351868;
-    border: none;
-    border-radius: 4px;
-    outline: none;
-    resize: none;
-    padding: 10px;
+    .campo-descricao textarea {
+        color: white;
+        background-color: #351868;
+        border: none;
+        border-radius: 4px;
+        outline: none;
+        resize: none;
+        padding: 10px;
 
-}
-.campo label, .campo-descricao label{
-    margin-bottom: 15px;
-}
-#contato form button{
-    height: 40px;
-    width: 60%;
-    background-color: var(--laranja--gamifica);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-family: "Montserrat";
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color 500ms;
-}
-#contato form button:hover{
-    background-color: #ad4949;
-}
+    }
+    .campo label, .campo-descricao label{
+        margin-bottom: 15px;
+    }
+    #contato form button{
+        height: 40px;
+        width: 60%;
+        background-color: var(--laranja--gamifica);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-family: "Montserrat";
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background-color 500ms;
+    }
+    #contato form button:hover{
+        background-color: #ad4949;
+    }
 footer{
     background-color: var(--roxo-gamifica);
     height: 290px;
@@ -393,6 +451,15 @@ footer .container-grid {
     color: var(--laranja--gamifica);
 
 }
+
+.menu-fechado {
+    display: none;
+}
+
+#icone-barras {
+    display: none;
+}
+
 @media screen and (max-width: 1300px) {
     header{
         position: relative;
@@ -416,7 +483,7 @@ footer .container-grid {
         padding: 0px 30px;
         justify-content: space-around;
         flex-direction: column;
-        background-color: #000000b5;
+        background-color: var(--roxo-gamifica);
         position: absolute;
         right: 0px;
         top: 165px;
@@ -517,7 +584,7 @@ footer p{
 
     nav.menu{
         width: 100%;
-        display: none;
+       
     }
     #sobre{
         padding-right: 0px;
