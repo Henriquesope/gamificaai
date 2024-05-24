@@ -1,0 +1,20 @@
+{
+    "cases": [
+        {
+        "imagem": "https://unsplash.it/640/425?image=320",
+        "descricao": "Uma empresa de tecnologia lança um desafio de gamificação onde os funcionarios devem propor e implementar ideias inovadoras."
+        },
+        {
+        "imagem": "https://unsplash.it/640/425?image=89",
+        "descricao": "Uma empresa de tecnologia lança um desafio de gamificação onde os funcionarios devem propor e implementar ideias inovadoras."
+        },
+        {
+        "imagem": "https://unsplash.it/640/425?image=40",
+        "descricao": "Uma empresa de tecnologia lança um desafio de gamificação onde os funcionarios devem propor e implementar ideias inovadoras."
+        },
+        {
+        "imagem": "https://unsplash.it/640/425?image=870",
+        "descricao": "Uma empresa de tecnologia lança um desafio de gamificação onde os funcionarios devem propor e implementar ideias inovadoras."
+        }
+    ]
+}
